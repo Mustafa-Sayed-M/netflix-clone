@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables */
+:root {
+    --primary-color: #e61a10;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    cursor: grab;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: var(--primary-color);
+}
+
+/* Start Swiper Style */
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transition: ease-out 200ms;
+    border-radius: 50%;
+    background-color: white;
+    color: var(--primary-color);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: ease-out 200ms;
+    -moz-transition: ease-out 200ms;
+    -ms-transition: ease-out 200ms;
+    -o-transition: ease-out 200ms;
+}
+
+.swiper .swiper-button-prev:hover,
+.swiper .swiper-button-next:hover {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Font Awesome 6 Free';
+}
+
+.swiper .swiper-button-prev::after {
+    content: '\f053';
+}
+
+.swiper .swiper-button-next::after {
+    content: '\f054';
+}
+
+/* End Swiper Style */

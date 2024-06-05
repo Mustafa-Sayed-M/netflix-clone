@@ -1,0 +1,62 @@
+header nav ul li a.active {
+    color: var(--primary-color);
+}
+
+@media (min-width: 769px) {
+    header nav ul li a:hover {
+        color: var(--primary-color);
+    }
+
+    header nav ul li a::before {
+        left: 0;
+        width: 0;
+        height: 2px;
+        content: '';
+        bottom: -1px;
+        position: absolute;
+        border-radius: 4px;
+        transition: ease-in-out 270ms;
+        background-color: var(--primary-color);
+        -webkit-transition: ease-in-out 270ms;
+        -moz-transition: ease-in-out 270ms;
+        -ms-transition: ease-in-out 270ms;
+        -o-transition: ease-in-out 270ms;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+}
+
+    header nav ul li a:hover::before,
+    header nav ul li a.active::before {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav {
+        width: 100%;
+    }
+
+    header nav {
+        overflow: hidden;
+        max-height: 0;
+        transition: ease-in-out 270ms;
+        -webkit-transition: ease-in-out 270ms;
+        -moz-transition: ease-in-out 270ms;
+        -ms-transition: ease-in-out 270ms;
+        -o-transition: ease-in-out 270ms;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        width: 100%;
+    }
+
+    header nav[data-open-navbar="true"] {
+        max-height: 500px
+    }
+}
