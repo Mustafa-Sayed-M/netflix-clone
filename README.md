@@ -1,4 +1,4 @@
-# Netflix Clone
+# Netflix Clone <a href="https://netflix-clone-9rz1agkml-mustafa-sayeds-projects.vercel.app/">( Live Site )</a>
 
 Welcome to the Netflix Clone project! This project is a web application that mimics the Netflix UI, showcasing movies and TV shows as card components.
 Each card presents detailed information about the respective movie, TV series, or series episode.
