@@ -30,7 +30,6 @@ function SeasonPage({ params }) {
 
                 const res = await fetch(apiLink);
                 const data = await res.json();
-                console.log(data.episodes);
                 setSeasonsData(data);
 
             } catch (err) {
